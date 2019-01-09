@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook original-version='10.5' source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Resolved Incidents (data_prep_-_flights)' inline='true' name='federated.0hozezw18crh551b5u2nv1bh6ooh' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_prep_-_flights' name='excel-direct.0ngddhp16bd8sd1fr0qjb1pkdasg'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Hanan/Desktop/Week10-class-activity/Data sets/data_prep_-_flights.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='date' date-parse-format='MM/dd/yyyy' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[1/1/2015]' />
+            <value name='[10/1/2015]' />
+            <value name='[11/1/2015]' />
+            <value name='[12/1/2015]' />
+            <value name='[2/1/2015]' />
+            <value name='[3/1/2015]' />
+            <value name='[4/1/2015]' />
+            <value name='[5/1/2015]' />
+            <value name='[6/1/2015]' />
+            <value name='[7/1/2015]' />
+            <value name='[8/1/2015]' />
+            <value name='[9/1/2015]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Resolved Incidents].[1/1/2015]' />
+              <field name='[Resolved Incidents].[10/1/2015]' />
+              <field name='[Resolved Incidents].[11/1/2015]' />
+              <field name='[Resolved Incidents].[12/1/2015]' />
+              <field name='[Resolved Incidents].[2/1/2015]' />
+              <field name='[Resolved Incidents].[3/1/2015]' />
+              <field name='[Resolved Incidents].[4/1/2015]' />
+              <field name='[Resolved Incidents].[5/1/2015]' />
+              <field name='[Resolved Incidents].[6/1/2015]' />
+              <field name='[Resolved Incidents].[7/1/2015]' />
+              <field name='[Resolved Incidents].[8/1/2015]' />
+              <field name='[Resolved Incidents].[9/1/2015]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.0ngddhp16bd8sd1fr0qjb1pkdasg' name='Resolved Incidents' table='[&apos;Resolved Incidents$&apos;]' type='table'>
+            <columns gridOrigin='B1:N35:no:B1:N35:1' header='no' lost='0' outcome='1' processed='321'>
+              <column datatype='string' name='Employee' ordinal='0' />
+              <column datatype='integer' name='1/1/2015' ordinal='1' />
+              <column datatype='integer' name='2/1/2015' ordinal='2' />
+              <column datatype='integer' name='3/1/2015' ordinal='3' />
+              <column datatype='integer' name='4/1/2015' ordinal='4' />
+              <column datatype='integer' name='5/1/2015' ordinal='5' />
+              <column datatype='integer' name='6/1/2015' ordinal='6' />
+              <column datatype='integer' name='7/1/2015' ordinal='7' />
+              <column datatype='integer' name='8/1/2015' ordinal='8' />
+              <column datatype='integer' name='9/1/2015' ordinal='9' />
+              <column datatype='integer' name='10/1/2015' ordinal='10' />
+              <column datatype='integer' name='11/1/2015' ordinal='11' />
+              <column datatype='integer' name='12/1/2015' ordinal='12' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Resolved Incidents]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B1:N35:no:B1:N35:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>321</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Employee]</local-name>
+            <parent-name>[Resolved Incidents]</parent-name>
+            <remote-alias>Employee</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Location' datatype='string' name='[Employee - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0hozezw18crh551b5u2nv1bh6ooh].[Employee]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Employee], &quot;-&quot;, 1 ) )' />
+      </column>
+      <column aggregation='Sum' caption='Employee ID' datatype='integer' name='[Employee - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0hozezw18crh551b5u2nv1bh6ooh].[Employee]'>
+        <calculation class='tableau' formula='INT( SPLIT( [Employee], &quot;-&quot;, 2 ) )' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Data' datatype='date' name='[Pivot Field Names]' role='dimension' type='ordinal' />
+      <column caption='Resolved Incidents' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.546638' measure-ordering='alphabetic' measure-percentage='0.453362' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='Tiers (data_prep_-_flights)' inline='true' name='federated.0rpnoko0hto4o217i85n01emfj48' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_prep_-_flights' name='excel-direct.15sd8820ub1mxh1ef3urz1stnz79'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Hanan/Desktop/Week10-class-activity/Data sets/data_prep_-_flights.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.15sd8820ub1mxh1ef3urz1stnz79' name='Tiers' table='[Tiers$]' type='table'>
+          <columns gridOrigin='B1:N35:no:B1:N35:1' header='no' lost='0' outcome='1' processed='318'>
+            <column datatype='string' name='Employee' ordinal='0' />
+            <column datatype='integer' name='1/1/2015' ordinal='1' />
+            <column datatype='integer' name='2/1/2015' ordinal='2' />
+            <column datatype='integer' name='3/1/2015' ordinal='3' />
+            <column datatype='integer' name='4/1/2015' ordinal='4' />
+            <column datatype='integer' name='5/1/2015' ordinal='5' />
+            <column datatype='integer' name='6/1/2015' ordinal='6' />
+            <column datatype='integer' name='7/1/2015' ordinal='7' />
+            <column datatype='integer' name='8/1/2015' ordinal='8' />
+            <column datatype='integer' name='9/1/2015' ordinal='9' />
+            <column datatype='integer' name='10/1/2015' ordinal='10' />
+            <column datatype='integer' name='11/1/2015' ordinal='11' />
+            <column datatype='integer' name='12/1/2015' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Employee</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Employee]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>Employee</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>1/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[1/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>1/1/2015</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>2/1/2015</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[3/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>3/1/2015</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>4/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[4/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>4/1/2015</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[5/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>5/1/2015</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[6/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>6/1/2015</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[7/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>7/1/2015</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>8/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[8/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>8/1/2015</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>9/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[9/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>9/1/2015</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>10/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[10/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>10/1/2015</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>11/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[11/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>11/1/2015</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>12/1/2015</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[12/1/2015]</local-name>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias>12/1/2015</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Tiers]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B1:N35:no:B1:N35:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>318</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='F1 - Split 1' datatype='string' name='[F1 - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0rpnoko0hto4o217i85n01emfj48].[F1]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [F1], &quot;.&quot;, 1 ) )' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.362256' measure-ordering='alphabetic' measure-percentage='0.637744' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Resolved Incidents (data_prep_-_flights)' name='federated.0hozezw18crh551b5u2nv1bh6ooh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hozezw18crh551b5u2nv1bh6ooh'>
+            <column aggregation='Sum' caption='Employee ID' datatype='integer' name='[Employee - Split 2]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0hozezw18crh551b5u2nv1bh6ooh].[Employee]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Employee], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Employee]' role='dimension' type='nominal' />
+            <column caption='Resolved Incidents' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Employee - Split 2]' derivation='None' name='[none:Employee - Split 2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <sort class='computed' column='[federated.0hozezw18crh551b5u2nv1bh6ooh].[none:Employee - Split 2:ok]' direction='DESC' using='[federated.0hozezw18crh551b5u2nv1bh6ooh].[sum:Pivot Field Values:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0hozezw18crh551b5u2nv1bh6ooh].[none:Employee - Split 2:ok]</rows>
+        <cols>[federated.0hozezw18crh551b5u2nv1bh6ooh].[sum:Pivot Field Values:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0hozezw18crh551b5u2nv1bh6ooh].[none:Employee - Split 2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      NP8LFPj9q5Dns/IAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
