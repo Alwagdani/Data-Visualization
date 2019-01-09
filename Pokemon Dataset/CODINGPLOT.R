@@ -1,0 +1,7 @@
+pokemon<-read.csv("pokemon.csv", header=TRUE)
+head(pokemon)
+plot(pokemon[3:7])
+cor(pokemon[,c(3,4,5,6,7)])
+plot(pokemon$Defense,pokemon$Attack, col="red", xlab="Defense", ylab="Attack", main="The highly correlated")
+plot(pokemon$HP,pokemon$Special, col="red", xlab="HP", ylab="Special", main="The Second highly correlated")
+plot(pokemon$HP,pokemon$Speed, col="red", xlab="HP", ylab="Speed", main="The Outliers")
