@@ -1,0 +1,18 @@
+subscribers <-read.csv("http://datasets.flowingdata.com/flowingdata_subscribers.csv",header=TRUE)
+subscribers[1:5,]
+plot(subscribers$Subscribers)
+plot(subscribers$Subscribers, type="p", ylim=c(0, 30000))
+plot(subscribers$Subscribers, type="h", ylim=c(0, 30000), xlab="Day", ylab="Subscribers") 
+points(subscribers$Subscribers, pch=19, col="black")
+population<-read.csv("http://datasets.flowingdata.com/world-population.csv",sep = ",", header = TRUE)
+plot(population$Year, population$Population, type="l", ylim=c(0, 7000000000), xlab="Year", ylab="Population") 
+postage<-read.csv("http://datasets.flowingdata.com/us-postage.csv", sep = ",", header = TRUE)
+plot(postage$Year, postage$Price, type="s") 
+plot(postage$Year, postage$Price, type="s",main="US Postage Rates for Letters, First Ounce, 1991-2010",xlab="Year", ylab="Postage Rate (Dollars)")
+unemployment <- read.csv("http://datasets.flowingdata.com/unemployment-rate-1948-2010.csv", sep=",")
+unemployment[1:10,]
+plot(1:length(unemployment$Value), unemployment$Value)
+lines(c(1,746), c(4.889523,6.42593))
+scatter.smooth(x=1:length(unemployment$Value), y=unemployment$Value)
+scatter.smooth(x=1:length(unemployment$Value), y=unemployment$Value, ylim=c(0,11), degree=2)
+scatter.smooth(x=1:length(unemployment$Value), y=unemployment$Value, ylim=c(0,11), degree=2, col="#CCCCCC", span=0.5)
